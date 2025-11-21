@@ -14,10 +14,9 @@
             <h1 class="logo">LCOSMO</h1>
             <nav>
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Location</a>
-                <a href="#">Planets</a>
-                <a href="#">Info</a>
+                <a href="#dash">Dashboard</a>
+                <a href="#sug">Suggestions</a>
+                <a href="#live">LiveFeed</a>
             </nav>
             <button class="btn-signing">SIGNIN</button>
             </header>
@@ -35,7 +34,7 @@
             </div>
             <div class="spline"><img src="./src/jupim.png" alt="jupo"></div>
         </div>
-        <div class="dashboard">
+        <div class="dashboard" id="dash">
             <h2>Dashboard</h2>
 
             <div class="controls">
@@ -71,25 +70,25 @@
                 </div>
             </div>
 
-            <div class="suggestions">
+            <div class="suggestions" id="sug">
                 <h3>Suggestions</h3>
                 <p id="suggestionText">Choose a location to see observation tips.</p>
             </div>
 
                 <h2 style="margin: 20px;">LIVE FeedMap</h2>
-            <div class="frame">
+            <div class="frame" id="live">
                 <iframe src="https://stellarium-web.org/" frameborder="0" scrolling="no" class="framecontent"></iframe>
             </div>
 
         </div>
 
 
-        <footer style="align-items: center; text-align: center; margin-top: 20px;">
+        <footer style="align-items: center; text-align: center; margin-top: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
             <h3>Copyright Reserved</h3>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta odit nulla est, porro nam qui quaerat explicabo deleniti quas asperiores. Eum veritatis cumque mollitia dolorum soluta dignissimos dicta vero, fugit quas sint inventore tenetur vel accusantium aspernatur officiis nam facere odio placeat explicabo ratione sequi? Dicta rerum distinctio sunt architecto quia culpa molestias, debitis blanditiis quo nemo amet et, ipsum excepturi ipsam mollitia?</h4>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="scripts/dashboard.js" defer></script>
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.0/build/spline-viewer.js" async></script>
+        
     </body>
 </html>
