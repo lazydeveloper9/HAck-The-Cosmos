@@ -46,7 +46,13 @@ header{
 header h1{
     margin: 0;
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 700;
+    animation: logor 5s linear infinite;
+}
+@keyframes logor {
+    0% { color: #ff4081; }
+    50% { color: #40c4ff; }
+    100% { color: #ff4081; }
 }
 nav{
     display: flex;
