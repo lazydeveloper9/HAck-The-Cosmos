@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <img src="./gradient.png" alt="gradient" class="image-gradient">
+        <img src="./src/gradient.png" alt="gradient" class="image-gradient">
         <div class="layer-blur"></div>
 
         <div class="container">
@@ -21,26 +21,75 @@
             </nav>
             <button class="btn-signing">SIGNIN</button>
             </header>
-            <!-- <div class="content">
-                <div class="tag-box">
-                    <div class="tag"></div>
-                </div>
-            </div> -->
         </div>
         <div class="banner">
             <h1 id="ti" style="font-size: 3rem;">Gallery</h1>
             <div class="slider" >
-                <div class="item" id="img1"><img src="./galaxy1.jpg" alt="galaxy1"></div>
-                <div class="item" id="img2"><img src="./galaxy2.jpg" alt="galaxy2"></div>
-                <div class="item" id="img3"><img src="./galaxy3.webp" alt="galaxy3"></div>
-                <div class="item" id="img4"><img src="./galaxy4.jpg" alt="galaxy4"></div>
-                <div class="item" id="img5"><img src="./galaxy5.jpg" alt="galaxy5"></div>
-                <div class="item" id="img6"><img src="./galaxy6.jpg" alt="galaxy6"></div>
+
+                <div class="item" id="img1"><img src="./src/galaxy1.jpg" alt="galaxy1"></div>
+                <div class="item" id="img2"><img src="./src/galaxy2.jpg" alt="galaxy2"></div>
+                <div class="item" id="img3"><img src="./src/galaxy3.webp" alt="galaxy3"></div>
+                <div class="item" id="img4"><img src="./src/galaxy4.jpg" alt="galaxy4"></div>
+                <div class="item" id="img5"><img src="./src/galaxy5.jpg" alt="galaxy5"></div>
+                <div class="item" id="img6"><img src="./src/galaxy6.jpg" alt="galaxy6"></div>
             </div>
+            <div class="spline"><img src="./src/jupim.png" alt="jupo"></div>
         </div>
-        <div class="frame">
-            <iframe src="https://stellarium-web.org/" frameborder="0" scrolling="no" class="framecontent"></iframe>
-            <!-- <iframe src="https://www.wikipedia.org/" frameborder="0"></iframe> -->
+        <div class="dashboard">
+            <h2>Dashboard</h2>
+
+            <div class="controls">
+                <label for="locationSelect">Location:</label>
+                <select id="locationSelect">
+                    <option>Raipur</option>
+                    <option>Bilaspur</option>
+                    <option>Jagdalpur</option>
+                    <option>Durg</option>
+                    <option>Ambikapur</option>
+                </select>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Star Visibility</h3>
+                    <p id="starScore">--</p>
+                </div>
+                <div class="card">
+                    <h3>Cloud Cover</h3>
+                    <p id="cloudScore">--</p>
+                </div>
+                <div class="card">
+                    <h3>Light Pollution</h3>
+                    <p id="lightScore">--</p>
+                </div>
+                <div class="card card-wide">
+                    <h3>Night Sky Metrics (Live)</h3>
+                    <div class="chart-row">
+                        <canvas id="lineChart" class="chart"></canvas>
+                        <canvas id="barChart" class="chart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggestions">
+                <h3>Suggestions</h3>
+                <p id="suggestionText">Choose a location to see observation tips.</p>
+            </div>
+
+                <h2 style="margin: 20px;">LIVE FeedMap</h2>
+            <div class="frame">
+                <iframe src="https://stellarium-web.org/" frameborder="0" scrolling="no" class="framecontent"></iframe>
+            </div>
+
         </div>
+
+
+        <footer style="align-items: center; text-align: center; margin-top: 20px;">
+            <h3>Copyright Reserved</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta odit nulla est, porro nam qui quaerat explicabo deleniti quas asperiores. Eum veritatis cumque mollitia dolorum soluta dignissimos dicta vero, fugit quas sint inventore tenetur vel accusantium aspernatur officiis nam facere odio placeat explicabo ratione sequi? Dicta rerum distinctio sunt architecto quia culpa molestias, debitis blanditiis quo nemo amet et, ipsum excepturi ipsam mollitia?</h4>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="scripts/dashboard.js" defer></script>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.0/build/spline-viewer.js" async></script>
     </body>
 </html>
