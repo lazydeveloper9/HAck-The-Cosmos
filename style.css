@@ -107,8 +107,7 @@ nav a:hover{
 .banner .slider .item{
     position: absolute;
     inset: 0 0 0 0;
-    transform:rotateY(calc( (var(--position) - 1) * (360deg / var(--quantity)) * 1deg)); 
-    transform:translateZ(550px);
+
 }
 .banner .slider .item img{
     width: 100%;
@@ -116,7 +115,24 @@ nav a:hover{
     object-fit: cover;
     border-radius: 25px;
 }
-
+#img1{
+    transform: rotateY(0deg) translateZ(550px);
+}
+#img2{
+    transform: rotateY(72deg) translateZ(550px);
+}
+#img3{
+    transform: rotateY(144deg) translateZ(550px);
+}
+#img4{
+    transform: rotateY(216deg) translateZ(550px);
+}
+#img5{
+    transform: rotateY(288deg) translateZ(550px);
+}
+#img6{
+    transform: rotateY(360deg) translateZ(550px);
+}
 /* Frame */
 
 .frame{
@@ -129,4 +145,8 @@ nav a:hover{
     top: 10px;
     width: 100%;
     height: 100%;
+}
+#ti{
+    position: inherit;
+    z-index: 3000;
 }
